@@ -12,10 +12,11 @@ today = dt.strftime("%Y-%m-%d")
 
 def download_asteroids(start_date, end_date, api_key):
     "Download asteroid data from NASA"
-    base_uri = "https://api.nasa.gov/neo/rest/v1/feed?"
-    query_string = f"start_date={start_date}&end_date={end_date}&api_key={api_key}"
-    full_url = f"{base_uri}{query_string}"
-    r = requests.get(full_url)
+    base_uri = "https://api.nasa.gov/"
+    base_service_uri = "neo/rest/v1/feed"
+    query_string = f"?start_date={start_date}&end_date={end_date}&api_key={api_key}"
+    full_uri = f"{base_uri}{base_service_uri}{query_string}"
+    r = requests.get(full_uri)
     asteroid_data = r.json()
     return asteroid_data
 
