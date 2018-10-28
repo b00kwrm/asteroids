@@ -1,5 +1,6 @@
 # asteroids
 [![Requirements Status](https://requires.io/github/b00kwrm/asteroids/requirements.svg?branch=master)](https://requires.io/github/b00kwrm/asteroids/requirements/?branch=master)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
 
 A small script that queries a NASA web service to get a list of near earth asteroids for today, filters some information and writes the list to a csv file.
 
