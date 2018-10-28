@@ -21,7 +21,7 @@ def download_asteroids(start_date, end_date, api_key):
 
 
 def filter_asteroid_data(asteroid_data, todays_date):
-    "Filter the asteroid data to pull out the total count, name, size, speed, and danger"
+    "Filter asteroid data for total count, name, size, speed, miss distance and danger"
     total_asteroid_count = asteroid_data["element_count"]
     asteroids = []
     for asteroid in asteroid_data["near_earth_objects"][todays_date]:
