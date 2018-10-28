@@ -5,5 +5,4 @@ A small script that queries a NASA web service to get a list of near earth aster
 
 The NASA web service is called NeoWs (Near Earth Object Web Service). NeoWs (Near Earth Object Web Service) is a RESTful web service for near earth Asteroid information.
 
-You can find the API here:
-https://api.nasa.gov/api.html#NeoWS
+You can find out more about the API here: https://api.nasa.gov/api.html#NeoWS
